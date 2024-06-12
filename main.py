@@ -7,7 +7,7 @@ import time
 from pathlib import Path
 
 import numpy as np
-import wandb
+#import wandb
 import torch
 from torch.utils.data import DataLoader
 import util.misc as utils
@@ -119,9 +119,9 @@ def main(args):
     print(args)
 
     # setup wandb for logging
-    utils.setup_wandb()
-    wandb.init(project="RoomFormer")
-    wandb.run.name = args.run_name
+    #utils.setup_wandb()
+    #wandb.init(project="RoomFormer")
+    #wandb.run.name = args.run_name
 
     device = torch.device(args.device)
 
